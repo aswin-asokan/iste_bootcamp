@@ -87,6 +87,7 @@ Buttons are used to carry out certain actions. All buttons have 1 common paramet
 - **onPressed:** used to define the action to be performed when a button is pressed. If no actions to be performed set to (){}
 
 **1. Elevated Button**
+
 An ElevatedButton in Flutter is a Material Design button that appears raised and triggers an action when pressed.
 
 - **child:** pass any widget to this as to show inside the elevated button
@@ -98,6 +99,7 @@ ElevatedButton(onPressed: () {}, child: Text("Press here"))
 ![elevated](https://aswin-asokan.github.io/iste_bootcamp/images/elevated.png)
 
 **2. Text Button**
+
 A flat button commonly used to show text, like links inside website.
 
 - **child:** pass any widget to this as to show inside the text button
@@ -112,6 +114,7 @@ TextButton(
 ![text_button](https://aswin-asokan.github.io/iste_bootcamp/images/text_button.png)
 
 **3. Icon Button**
+
 Used to create a button with an icon.
 
 - **icon:** to create the icon to be shown on the button, we use Icon() widget to implement this
@@ -147,10 +150,15 @@ Textfield is used for taking user inputs.
 - set **filled** property as true
 
 **2. Prefix icon:** icon to be shown at left side of textfield
+
 **3. Label:** to give the text field a label
+
 **4. Hint text:** text to be shown as a hint, like _Enter phone number_
+
 **5. Suffix icon:** icon to be shown at right side of textfield
+
 **6. Activation indicator:** change color if the text field is selected
+
 **7. Helper text:** a text that is shown below the text field
 
 For getting the value from the text field we have to create a **TextEditingController** object for it and pass it to the controller property of the textfield like the example below. The **decoration** property is used to customise the textfield with **InputDecoration()**.
@@ -204,6 +212,7 @@ class _HomeState extends State<Home> {
 Images can be added in 2 ways,
 
 **1. Local asset**
+
 To add an image from local directory to your flutter project,
 
 - Create a folder <span style="color:green">/assets/images</span> and place your image in that folder
@@ -303,6 +312,7 @@ Padding(
   <img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_padding.png" height=400>
 
 **Types**
+
 **1. EdgeInsets.all(value):** Add a symmetric paddic of given value around the widget
 **2. EdgeInsets.only(top: val,right: val,left: val,bottom: val):** Add specific padding of given value to each side
 **3. EdgeInsets.symmetric(horizontal: val,vertical: val):** Give similar padding horizontally and vertically
@@ -313,9 +323,10 @@ Padding(
 
 These are use to arrange multiple widgets horizontally and vertically.
 
-<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row_column.png" height=500>
+![row_column](https://aswin-asokan.github.io/iste_bootcamp/images/row_column.png)
 
 **1. Row**
+
 Used to arrange widgets as a horizontal array.
 
 ```dart
@@ -339,7 +350,8 @@ Row(
 
 <img src="https://aswin-asokan.github.io/iste_bootcamp/images/row.png" height=500>
 
-**1. Colunn**
+**2. Colunn**
+
 Used to arrange widgets as a horizontal array.
 
 ```dart
@@ -421,6 +433,7 @@ Column(
 - **3. CrossAxisAlignment.center:** Place the children so that their centers align with the middle of the cross axis.
 
 **3. Spacing**
+
 Add equal spacing between children.
 
 ```dart
