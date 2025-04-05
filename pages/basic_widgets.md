@@ -5,13 +5,16 @@
 1. [Scaffold Widget](#scaffold-widget)
 2. [Basic Widgets](#basic-widgets)
    a. [Container](#container)
-   b. [Text](#text)
-   c. [Buttons](#buttons)
-   d. [Icon](#icon)
-   e. [Textfield](#textfield)
-   f. [Image](#image)
-   g. [Safe area](#safearea)
-   h. [Padding](#padding)
+   b. [Sized Box](#sized-box)
+   c. [Text](#text)
+   d. [Buttons](#buttons)
+   e. [Icon](#icon)
+   f. [Textfield](#textfield)
+   g. [Image](#image)
+   h. [Safe area](#safearea)
+   i. [Padding](#padding)
+   j. [Row and Column](#row-and-column)
+   k. [Scrolling](#scrolling)
 
 ---
 
@@ -74,6 +77,14 @@ Container(
 ![custom-container](https://aswin-asokan.github.io/iste_bootcamp/images/custom-container.png)
 
 **Note:** when you are using decoration property always place **color** property inside **BoxDecoration()**. Otherwise, it leads to an error.
+
+#### Sized box
+
+Similar to container. But, it do not support any customization other than changing height and width. Like container it can also hold a widget as it's child. Usually used to give space between widgets in multiple widget layout.
+
+```dart
+ SizedBox(height: 20, width: 100)
+```
 
 ---
 
@@ -284,7 +295,7 @@ return Scaffold(
     );
 ```
 
-![without_safearea](https://aswin-asokan.github.io/iste_bootcamp/images/without_safearea.png)
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_safearea.png" height=500></img>
 
 - **With safearea**
 
@@ -292,7 +303,7 @@ return Scaffold(
 return Scaffold(body: SafeArea(child: Image.asset("assets/images/flutter.png")));
 ```
 
-![with_safearea](https://aswin-asokan.github.io/iste_bootcamp/images/with_safearea.png)
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_safearea.png" height=500></img>
 
 ---
 
@@ -308,10 +319,10 @@ Padding(
 ```
 
 - Without padding:
-  ![without_padding](https://aswin-asokan.github.io/iste_bootcamp/images/without_padding.png)
+  <img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_padding.png" height=400></img>
 
 - With padding:
-  ![with_padding](https://aswin-asokan.github.io/iste_bootcamp/images/with_padding.png)
+  <img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_padding.png" height=400></img>
 
 **Types**
 **1. EdgeInsets.all(value):** Add a symmetric paddic of given value around the widget
@@ -320,38 +331,190 @@ Padding(
 
 ---
 
-#### Appbar
+#### Row and Column
 
-![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/app_bar.png)
+These are use to arrange multiple widgets horizontally and vertically.
 
-To implement an appbar type **appBar:** inside the Scaffold() and use the **AppBar()** widget.
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row_column.png" height=500></img>
+
+**1. Row**
+Used to arrange widgets as a horizontal array.
 
 ```dart
-return Scaffold(
-      appBar: AppBar(
-        //leading icon shown on top left corner
-        leading: IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back)),
-        // title shown after leading icon
-        title: Text("Title"),
-        // icons shown on right side
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-        ],
-        //bottom part of app bar
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(10),
-          child: Divider(),
+Row(
+    children: [
+        Container(
+        width: 200,
+        height: 200,
+        color: Colors.red,
+        child: Text("container 1"),
         ),
-      ),
-    );
+        Container(
+        width: 200,
+        height: 200,
+        color: Colors.red,
+        child: Text("container 2"),
+        ),
+    ],
+),
 ```
 
-The above code will give you an appbar like this,
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row.png" height=500></img>
 
-![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/appbar.png)
+**1. Colunn**
+Used to arrange widgets as a horizontal array.
 
-- **leading:** property defines the widget to be shown at left most side of appbar
-- **title:** property defines the title of the appbar
-- **actions:** is list in which we can give multiple widgets to be shown at right most side
-- **bottom:** this widget is shown at the bottom of the appbar
+```dart
+Row(
+    children: [
+        Column(
+            children: [
+              TextField(
+                controller: controller,
+                decoration: InputDecoration(
+                  labelText: 'Enter text',
+                  border: OutlineInputBorder(),
+                ),
+              ),
+              //add a space of 20px
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  //display text in console
+                  print(controller.text);
+                },
+                child: const Text('Submit'),
+              ),
+            ],
+          ),
+    ],
+),
+```
+
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/column.png" height=500></img>
+
+**Properties:**
+
+Try each of these and observe the differences.
+
+**1. Main Axis:**
+
+- Row: The main axis is horizontal (left to right).
+- Column: The main axis is vertical (top to bottom).
+- mainAxisAlignment controls how children are aligned along this primary axis.
+
+```dart
+Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children[
+            ....
+        ]
+)
+```
+
+**Values**
+
+- **MainAxisAlignment.center:** Place the children as close to the middle of the main axis as possible.
+- **MainAxisAlignment.start:** Place the children as close to the start of the main axis as possible.
+- **MainAxisAlignment.end:** Place the children as close to the end of the main axis as possible.
+- **MainAxisAlignment.spaceAround:** Place the free space evenly between the children as well as half of that space before and after the first and last child.
+- **MainAxisAlignment.spaceBetween:** Place the free space evenly between the children.
+- **MainAxisAlignment.spaceEvenly:** Place the free space evenly between the children as well as before and after the first and last child.
+
+**2. Cross Axis:**
+
+- Row: The cross axis is vertical (top to bottom).
+- Column: The cross axis is horizontal (left to right).
+- crossAxisAlignment controls how children are aligned along this secondary axis.
+
+```dart
+Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children[
+            ....
+        ]
+)
+```
+
+**Values**
+
+- **1. CrossAxisAlignment.start:** Place the children with their start edge aligned with the start side of the cross axis.
+- **2. CrossAxisAlignment.end:** Place the children as close to the end of the cross axis as possible.
+- **3. CrossAxisAlignment.center:** Place the children so that their centers align with the middle of the cross axis.
+
+**3. Spacing**
+Add equal spacing between children.
+
+```dart
+Column(
+        spacing: 10,
+        children[
+            ....
+        ]
+)
+```
+
+---
+
+#### Scrolling
+
+For adding a scroll functionality to rows and columns. This will also ensures there are no overlflow issues in the app. To implement a scrolling function wrap the row/ column with **SingleChildScrollView**.
+
+```dart
+SingleChildScrollView(
+    child: Column(
+        spacing: 50,
+        children: [
+        Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+            child: Text("container 1"),
+        ),
+        Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+            child: Text("container 2"),
+        ),
+        Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+            child: Text("container 3"),
+        ),
+        ],
+    ),
+)
+```
+
+**Notes:** Use the **scrolldirection** property of **SingleChildScrollView** for adjusting the scrolling in Row as the default one is set to vertical.
+
+```dart
+SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    child: Row(
+        spacing: 50,
+        children: [
+        Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+            child: Text("container 1"),
+        ),
+        Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+            child: Text("container 2"),
+        ),
+        Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+            child: Text("container 3"),
+        ),
+        ],
+    ),
+)
+```
