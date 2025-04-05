@@ -271,7 +271,7 @@ return Scaffold(
     );
 ```
 
-<img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_safearea.png" height=500></img>
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_safearea.png" height=500>
 
 - **With safearea**
 
@@ -279,7 +279,7 @@ return Scaffold(
 return Scaffold(body: SafeArea(child: Image.asset("assets/images/flutter.png")));
 ```
 
-<img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_safearea.png" height=500></img>
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_safearea.png" height=500>
 
 ---
 
@@ -295,10 +295,10 @@ Padding(
 ```
 
 - Without padding:
-  <img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_padding.png" height=400></img>
+  <img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_padding.png" height=400>
 
 - With padding:
-  <img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_padding.png" height=400></img>
+  <img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_padding.png" height=400>
 
 **Types**
 **1. EdgeInsets.all(value):** Add a symmetric paddic of given value around the widget
@@ -311,7 +311,7 @@ Padding(
 
 These are use to arrange multiple widgets horizontally and vertically.
 
-<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row_column.png" height=500></img>
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row_column.png" height=500>
 
 **1. Row**
 Used to arrange widgets as a horizontal array.
@@ -335,7 +335,7 @@ Row(
 ),
 ```
 
-<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row.png" height=500></img>
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/row.png" height=500>
 
 **1. Colunn**
 Used to arrange widgets as a horizontal array.
@@ -367,7 +367,7 @@ Row(
 ),
 ```
 
-<img src="https://aswin-asokan.github.io/iste_bootcamp/images/column.png" height=500></img>
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/column.png" height=500>
 
 **Properties:**
 

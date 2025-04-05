@@ -43,7 +43,7 @@ return Scaffold(
           IconButton(onPressed: () {}, icon: Icon(Icons.search)),
           IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
         ],
-        //bottom part of app bar
+        //bottom part of app bar, it always uses PreferredSize() widget
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(10),
           child: Divider(),
