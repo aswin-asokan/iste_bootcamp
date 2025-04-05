@@ -4,4 +4,4 @@ This repository contains the step by step guidance of flutter application develo
 
 ## Documentations
 
-1. [Bootcamp day 1](pages/day_1.md)
+1. [Bootcamp day 1](pages/setting_up.md)

@@ -1,17 +1,15 @@
-# Bootcamp day 1
+# Setting up the Project
 
 ## Table of contents
 
 1. [Setting up a Flutter project](#setting-up-a-flutter-project)
 2. [Creating first project](#creating-first-project)
 3. [Making changes to the default app](#making-changes-to-the-default-app)
-4. [Creating a new page](#creating-a-new-page)  
-   4.1. [Scaffold widget](#scaffold-widget)  
-   4.2. [Basic widgets](#basic-widgets)
+4. [Creating a new page](#creating-a-new-page)
 
 ---
 
-#### Setting up a Flutter project
+### Setting up a Flutter project
 
 **Required extensions in VS Code**
 
@@ -31,7 +29,7 @@
 
 ---
 
-#### Creating first project
+### Creating first project
 
 **1. Open your terminal or command prompt and run**
 
@@ -65,17 +63,20 @@ flutter run
 
 ---
 
-#### Making changes to the default app
+### Making changes to the default app
 
 Modify the title or text in <span style="color:green">lib/main.dart</span>. Save the file to apply the changes.
+
 **Hot reload and Hot restart:**
+
 In the terminal:
-Press **r** (Hot reload): Reloads only the changed parts without losing the app state. Ideal for minor UI updates.
-Press **R** (Hot restart): Restarts the entire app, resetting the state. Use this when Hot Reload fails or after major changes.
+
+- Press **r** (Hot reload): Reloads only the changed parts without losing the app state. Ideal for minor UI updates.
+- Press **R** (Hot restart): Restarts the entire app, resetting the state. Use this when Hot Reload fails or after major changes.
 
 ---
 
-#### Creating a new page
+### Creating a new page
 
 In <span style="color:green">lib/main.dart</span> the **home: property of MaterialApp()** directs us to the first page of the application which is set as <span style="color:deepskyblue">MyHomePage</span>. Remove the code for <span style="color:deepskyblue">MyHomePage</span> starting from line 38.
 
@@ -156,25 +157,3 @@ class MyApp extends StatelessWidget {
 ```
 
 Reload the application to apply the changes.
-
-##### Scaffold widget
-
-Scaffold is the basic layout structure used for development in flutter. Given below are the basic properties of Scaffold used for app development.
-
-![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/scaffold.jpg)
-
-**Scaffold properties**
-
-```dart
-return Scaffold(
-      appBar: AppBar(),//to create an app bar
-      drawer: Drawer(),//to create a drawer
-      body: Container(),//to create a container as main content
-      floatingActionButton: IconButton(onPressed: (){}, icon: Icon(Icons.add)),//to create a floating action button
-      bottomSheet: Container(),//to create a bottom sheet
-    );
-```
-
-##### Basic widgets
-
-1.
