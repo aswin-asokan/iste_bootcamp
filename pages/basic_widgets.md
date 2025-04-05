@@ -33,6 +33,8 @@ return Scaffold(
 
 #### Basic widgets
 
+**Note:** Try out the following widgetsinside the **body:** property of Scaffold
+
 ##### Container
 
 We use the body property of the Scaffold widget to define the main content area of the screen. You can place any widget as the body.
