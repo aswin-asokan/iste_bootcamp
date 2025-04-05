@@ -3,11 +3,11 @@
 ## Table of contents
 
 1. [Scaffold Widget](#scaffold-widget)
-2. [Basic Widgets](#basic-widgets)  
-   2.1. [Container](#container)
-   2.2. [Text](#text)
-   2.3. [Buttons](#buttons)
-   2.4. [Icon](#icon)
+2. [Basic Widgets](#basic-widgets)
+   1. [Container](#container)
+   2. [Text](#text)
+   3. [Buttons](#buttons)
+   4. [Icon](#icon)
 
 ---
 
@@ -35,7 +35,7 @@ return Scaffold(
 
 **Note:** Try out the following widgetsinside the **body:** property of Scaffold
 
-##### Container
+#### Container
 
 We use the body property of the Scaffold widget to define the main content area of the screen. You can place any widget as the body.
 
@@ -73,7 +73,7 @@ Container(
 
 ---
 
-##### Text
+#### Text
 
 It is used to show textual data. Use **style:** property to change text style,
 
@@ -89,7 +89,7 @@ Text("Title",
 
 ---
 
-##### Buttons
+#### Buttons
 
 Buttons are used to carry out certain actions. All buttons have 1 common parameter which is,
 
@@ -133,7 +133,7 @@ IconButton(onPressed: () {}, icon: Icon(Icons.shopify))
 
 ---
 
-##### Icon
+#### Icon
 
 Used to create an icon. Inside the parentheses we give **Icons.icon_name** to use in-built icons in material design. size: property can be used to adjust icon size.
 
@@ -145,7 +145,7 @@ Icon(Icons.shopify, size: 50)//changes size to 50px
 
 ---
 
-##### Appbar
+#### Appbar
 
 ![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/app_bar.png)
 

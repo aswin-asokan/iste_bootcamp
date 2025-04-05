@@ -44,11 +44,13 @@ flutter create project_name
 ![vs-code](https://aswin-asokan.github.io/iste_bootcamp/images/vs-code.png)
 
 **3. Understanding the Project Structure**
+
 The lib/ directory contains the source code for your application.
 
 ![lib](https://aswin-asokan.github.io/iste_bootcamp/images/lib.png)
 
 **4. Running the Auto-Generated App**
+
 We can run the auto generated app by typing:
 
 ```dart
@@ -107,7 +109,11 @@ floatingActionButton: FloatingActionButton(
 
 1. On <span style="color:green">lib/</span> folder create a new file that’ll be set as the new initial screen like, <span style="color:green">lib/home.dart</span>.
 2. Open the new file and type st vs code will generate some recommendations, mainly: Flutter Stateful Widget and Flutter Stateless Widget
-   **Stateless vs Stateful widgets:** - **Stateless widgets:** The widget’s state remains constant. Ideal for displaying static content like **text, images, and icons**. - **Stateful widgets:** The widget’s state can change over time. Used for interactive elements like **buttons, text fields, and animations**.
+
+   **Stateless vs Stateful widgets:**
+
+   - **Stateless widgets:** The widget’s state remains constant. Ideal for displaying static content like **text, images, and icons**.
+   - **Stateful widgets:** The widget’s state can change over time. Used for interactive elements like **buttons, text fields, and animations**.
 
 Choose Stateful widget for now, this will automatically generate a code block.Modify the class name to match the file name. Change
 
