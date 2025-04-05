@@ -1,4 +1,11 @@
-#### Scaffold widget
+# Scaffold Class
+
+## Table of contents
+
+1. [Scaffold Widget](#scaffold-widget)
+2. [App bar](#appbar)
+
+### Scaffold widget
 
 Scaffold is the basic layout structure used for development in flutter. Given below are the basic properties of Scaffold used for app development.
 
