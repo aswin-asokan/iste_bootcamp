@@ -295,9 +295,11 @@ Padding(
 ```
 
 - Without padding:
+
   <img src="https://aswin-asokan.github.io/iste_bootcamp/images/without_padding.png" height=400>
 
 - With padding:
+
   <img src="https://aswin-asokan.github.io/iste_bootcamp/images/with_padding.png" height=400>
 
 **Types**
