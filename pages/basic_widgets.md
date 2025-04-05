@@ -2,45 +2,21 @@
 
 ## Table of contents
 
-1. [Scaffold Widget](#scaffold-widget)
-2. [Basic Widgets](#basic-widgets)
-   a. [Container](#container)
-   b. [Sized Box](#sized-box)
-   c. [Text](#text)
-   d. [Buttons](#buttons)
-   e. [Icon](#icon)
-   f. [Textfield](#textfield)
-   g. [Image](#image)
-   h. [Safe area](#safearea)
-   i. [Padding](#padding)
-   j. [Row and Column](#row-and-column)
-   k. [Scrolling](#scrolling)
+1. [Container](#container)
+2. [Sized Box](#sized-box)
+3. [Text](#text)
+4. [Buttons](#buttons)
+5. [Icon](#icon)
+6. [Textfield](#textfield)
+7. [Image](#image)
+8. [Safe area](#safearea)
+9. [Padding](#padding)
+10. [Row and Column](#row-and-column)
+11. [Scrolling](#scrolling)
 
 ---
 
-#### Scaffold widget
-
-Scaffold is the basic layout structure used for development in flutter. Given below are the basic properties of Scaffold used for app development.
-
-![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/scaffold.jpg)
-
-**Scaffold properties**
-
-```dart
-return Scaffold(
-      appBar: AppBar(),//to create an app bar
-      drawer: Drawer(),//to create a drawer
-      body: Container(),//to create a container as main content
-      floatingActionButton: IconButton(onPressed: (){}, icon: Icon(Icons.add)),//to create a floating action button
-      bottomSheet: Container(),//to create a bottom sheet
-    );
-```
-
----
-
-#### Basic widgets
-
-**Note:** Try out the following widgetsinside the **body:** property of Scaffold
+**Note:** Try out the following widgets inside the **body:** property of Scaffold
 
 #### Container
 

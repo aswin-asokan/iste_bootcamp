@@ -1,3 +1,23 @@
+#### Scaffold widget
+
+Scaffold is the basic layout structure used for development in flutter. Given below are the basic properties of Scaffold used for app development.
+
+![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/scaffold.jpg)
+
+**Scaffold properties**
+
+```dart
+return Scaffold(
+      appBar: AppBar(),//to create an app bar
+      drawer: Drawer(),//to create a drawer
+      body: Container(),//to create a container as main content
+      floatingActionButton: IconButton(onPressed: (){}, icon: Icon(Icons.add)),//to create a floating action button
+      bottomSheet: Container(),//to create a bottom sheet
+    );
+```
+
+---
+
 #### Appbar
 
 ![scaffold](https://aswin-asokan.github.io/iste_bootcamp/images/app_bar.png)
