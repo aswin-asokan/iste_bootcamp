@@ -6,6 +6,8 @@
 2. [Basic Widgets](#basic-widgets)  
    2.1. [Container](#container)
    2.2. [Text](#text)
+   2.3. [Buttons](#buttons)
+   2.4. [Icon](#icon)
 
 ---
 
