@@ -5,7 +5,7 @@
 1. [Setting up a Flutter project](#setting-up-a-flutter-project)
 2. [Creating first project](#creating-first-project)
 3. [Making changes to the default app](#making-changes-to-the-default-app)
-4. [Creating a new page](#creating-a-new-page)
+4. [Creating a new page](#creating-a-new-page)  
    4.1. [Scaffold widget](#scaffold-widget)  
    4.2. [Basic widgets](#basic-widgets)
 
@@ -176,3 +176,5 @@ return Scaffold(
 ```
 
 ##### Basic widgets
+
+1.
