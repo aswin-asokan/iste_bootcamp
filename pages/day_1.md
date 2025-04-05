@@ -12,6 +12,15 @@
 
 #### Setting up a Flutter project
 
+1. **Creating first flutter project:**
+   Open your terminal or command prompt and run:
+
+```dart
+flutter create project_name
+```
+
+![new-project](images/new-project.png)
+
 #### Creating first project
 
 #### Making changes to the default app
