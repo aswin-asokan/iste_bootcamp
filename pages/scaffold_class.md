@@ -4,6 +4,9 @@
 
 1. [Scaffold Widget](#scaffold-widget)
 2. [App bar](#appbar)
+3. [Drawer](#drawer)
+4. [Bottom sheet](#bottomsheet)
+5. [Floating action button](#floating-action-button)
 
 ### Scaffold widget
 
@@ -157,7 +160,7 @@ bottomSheet: Container(
       ),
 ```
 
-![bottom_sheet](https://aswin-asokan.github.io/iste_bootcamp/images/bottom_sheet.png)
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/bottom_sheet.png" height=500/>
 
 ---
 
