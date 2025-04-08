@@ -171,7 +171,7 @@ This saves the text input into the name variable. Then it rebuilds the screen to
 | Function Call | Using the function          | increment();                |
 | setState()    | Tells Flutter to rebuild UI | setState(() { name = ... }) |
 
-<video width="50%" height="auto" controls>
+<video height=350 controls>
   <source src="https://aswin-asokan.github.io/iste_bootcamp/videos/fn_var.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
