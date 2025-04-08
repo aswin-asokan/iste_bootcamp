@@ -10,9 +10,9 @@ Design a **Login Page** in Flutter with the following requirements:
 
    - If any field is empty, show a SnackBar with the message "Please fill all fields" in red
 
-   - If:
-     Email = abc@gmail.com
-     Password = 1234
+   - If:   
+     Email = abc@gmail.com   
+     Password = 1234   
      Show a green SnackBar with "Login Successful"
    - Else, show a red SnackBar with "Invalid credentials"
 
