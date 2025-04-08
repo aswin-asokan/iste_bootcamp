@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.white,
         child: ListView(
           children: [
-            DrawerHeader(child: Text("header")),
+            DrawerHeader(child: Image.asset("assets/images/flutter.png")),
             ListTile(
               title: Text("Button"),
               onTap: () {

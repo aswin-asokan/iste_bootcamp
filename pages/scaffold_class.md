@@ -96,7 +96,7 @@ drawer: Drawer(
         backgroundColor: Colors.white,
         child: ListView(
           children: [
-            DrawerHeader(child: Text("header")),
+          DrawerHeader(child: Image.asset("assets/images/flutter.png")),
             ListTile(
               title: Text("Button"),
               onTap: () {
@@ -122,6 +122,8 @@ drawer: Drawer(
 
 > **Notes**
 
+**DrawerHeader :** a special widget provided by Flutter to place a decorative or informative header at the top of the Drawer.
+
 **MediaQuery.of(context).size.width:** this return the width of the screen. Multiplying with 0.5 gives value as half the width of screen. Changing width to height can give the height value.
 
 **Listview:** ListView is a scrollable column. It lays out its children vertically and allows the user to scroll if the content is too long for the screen.
@@ -138,6 +140,6 @@ drawer: Drawer(
 
 **Navigator.pop(context):** it is used to close the current context on the screen. Here pressing on listtile closes the drawer.
 
-![drawer](https://aswin-asokan.github.io/iste_bootcamp/images/drawer.png)
+![drawer_](https://aswin-asokan.github.io/iste_bootcamp/images/drawer_.png)
 
 ---
