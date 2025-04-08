@@ -1,0 +1,11 @@
+code_base/.dart_tool
+code_base/.idea
+code_base/.vscode
+code_base/build
+code_base/android
+code_base/ios
+code_base/web
+code_base/linux
+code_base/macos
+code_base/windows
+code_base/test

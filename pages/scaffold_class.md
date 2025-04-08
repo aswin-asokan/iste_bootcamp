@@ -60,3 +60,84 @@ The above code will give you an appbar like this,
 - **title:** property defines the title of the appbar
 - **actions:** is list in which we can give multiple widgets to be shown at right most side
 - **bottom:** this widget is shown at the bottom of the appbar
+
+---
+
+### Drawer
+
+Drawer is a simple way to navigate between different sections of a Flutter app. To access the drawer, one can tap on the drawer icon on the left edge of the Appbar, and the drawer slides out, revealing a list of options.
+
+To create a drawer,
+
+**1. Add a iconbutton on leading part of appbar to open the drawer**
+
+```dart
+AppBar(
+    leading: Builder(
+    builder: (context) => IconButton(
+      onPressed: () {
+        Scaffold.of(context).openDrawer();
+      },
+      icon: Icon(Icons.menu),
+    ),
+  ),
+)
+```
+
+> **Note:** In Flutter, when you use Scaffold.of(context) or ScaffoldMessenger.of(context), the context must be a child of the Scaffold. But the leading widget (which is inside AppBar) doesn’t have access to the full Scaffold context yet. Builder creates a new BuildContext that is now a child of the Scaffold. This allows Scaffold.of(context) to successfully find the Scaffold and open the drawer.
+
+![drawer_icon](https://aswin-asokan.github.io/iste_bootcamp/images/drawer_icon.png)
+
+**2. Using drawer property of Scaffold create a Drawer widget**
+
+```dart
+drawer: Drawer(
+        width: MediaQuery.of(context).size.width * 0.5,
+        backgroundColor: Colors.white,
+        child: ListView(
+          children: [
+            DrawerHeader(child: Text("header")),
+            ListTile(
+              title: Text("Button"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: Text("Button"),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
+      ),
+```
+
+| Property        | Description                                            |
+| --------------- | ------------------------------------------------------ |
+| width           | Controls how wide the drawer is                        |
+| backgroundColor | Changes the background color of the drawer.            |
+| child           | The content of the drawer. Often a ListView or Column. |
+
+> **Notes**
+
+**MediaQuery.of(context).size.width:** this return the width of the screen. Multiplying with 0.5 gives value as half the width of screen. Changing width to height can give the height value.
+
+**Listview:** ListView is a scrollable column. It lays out its children vertically and allows the user to scroll if the content is too long for the screen.
+
+**ListTile:** is a pre-built widget to create a clickable row with:
+
+| Property | Description                          |
+| -------- | ------------------------------------ |
+| title    | main text                            |
+| subtitle | optional smaller text                |
+| leading  | an icon or image on the left         |
+| trailing | an icon or widget on the right       |
+| onTap    | what happens when the tile is tapped |
+
+**Navigator.pop(context):** it is used to close the current context on the screen. Here pressing on listtile closes the drawer.
+
+![drawer](https://aswin-asokan.github.io/iste_bootcamp/images/drawer.png)
+
+---

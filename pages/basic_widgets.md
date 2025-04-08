@@ -16,7 +16,7 @@
 
 ---
 
-**Note:** Try out the following widgets inside the **body:** property of Scaffold
+> **Note:** Try out the following widgets inside the **body:** property of Scaffold
 
 #### Container
 
@@ -52,7 +52,7 @@ Container(
 
 ![custom-container](https://aswin-asokan.github.io/iste_bootcamp/images/custom-container.png)
 
-**Note:** when you are using decoration property always place **color** property inside **BoxDecoration()**. Otherwise, it leads to an error.
+> **Note:** when you are using decoration property always place **color** property inside **BoxDecoration()**. Otherwise, it leads to an error.
 
 #### Sized box
 
@@ -479,7 +479,7 @@ SingleChildScrollView(
 )
 ```
 
-**Notes:** Use the **scrolldirection** property of **SingleChildScrollView** for adjusting the scrolling in Row as the default one is set to vertical.
+> **Notes:** Use the **scrolldirection** property of **SingleChildScrollView** for adjusting the scrolling in Row as the default one is set to vertical.
 
 ```dart
 SingleChildScrollView(
