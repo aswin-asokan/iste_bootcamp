@@ -58,6 +58,7 @@ class _HomeState extends State<Home> {
             TextField(controller: controller),
             Container(
               width: double.infinity,
+              height: 50,
               child: ElevatedButton(
                 onPressed: () {
                   print(controller.text);
@@ -68,6 +69,20 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
+      bottomSheet: Container(
+        color: Colors.blue[200],
+        height: 50,
+        child: Center(child: Text("Bottom Sheet")),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text("Hello")));
+        },
+        child: Icon(Icons.message_outlined),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
     );
   }
 }

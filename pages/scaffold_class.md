@@ -143,3 +143,56 @@ drawer: Drawer(
 ![drawer_](https://aswin-asokan.github.io/iste_bootcamp/images/drawer_.png)
 
 ---
+
+### Bottomsheet
+
+A BottomSheet is a panel that slides up from the bottom of the screen. It’s perfect for showing, extra options (like "Edit", "Delete"), a small form or message, etc. For this use the **bottomSheet** property of Scaffold.
+
+```dart
+bottomSheet: Container(
+        color: Colors.blue[200],
+        height: 50,
+        child: Center(child: Text("Bottom Sheet")),
+        //center aligns child to center of parent
+      ),
+```
+
+![bottom_sheet](https://aswin-asokan.github.io/iste_bootcamp/images/bottom_sheet.png)
+
+---
+
+### Floating action Button
+
+A Floating Action Button (FAB) is a circular button that usually "floats" above your UI, typically in the bottom-right corner. It's meant to represent the primary action on a screen.
+
+```dart
+floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(
+            context,
+          ).showSnackBar(SnackBar(content: Text("Hello")));
+        },
+        child: Icon(Icons.message_outlined),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
+
+```
+
+> **Notes**
+
+**ScaffoldMessenger:** A Flutter widget that displays SnackBars (the small message boxes at the bottom of the screen).
+
+**floatingActionButtonLocation:** This tells Flutter where to place your FAB on the screen. Commonly used values are,
+
+| Values      | Description   |
+| ----------- | ------------- |
+| centerFloat | Bottom center |
+| endFloat    | Bottom right  |
+| startFloat  | Bottom left   |
+| centerTop   | Top center    |
+| endTop      | Top right     |
+| startTop    | Top left      |
+
+| Floating action Button                                                                  | Snackbar Messenger                                                            |
+| --------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| ![floating_icon](https://aswin-asokan.github.io/iste_bootcamp/images/floating_icon.png) | ![snackbar](https://aswin-asokan.github.io/iste_bootcamp/images/snackbar.png) |
