@@ -9,6 +9,26 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   TextEditingController controller = TextEditingController();
+
+  // Variables go here
+  String name = "";
+  int count = 0;
+
+  // Functions go here
+  void increment() {
+    setState(() {
+      count++;
+    });
+  }
+
+  String greetUser(String userName) {
+    if (userName == "Aswin") {
+      return "Hello $userName";
+    } else {
+      return "Hello User";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -61,7 +81,15 @@ class _HomeState extends State<Home> {
               height: 50,
               child: ElevatedButton(
                 onPressed: () {
-                  print(controller.text);
+                  setState(() {
+                    name = controller.text;
+                  });
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(greetUser(name)),
+                      duration: Duration(seconds: 2),
+                    ),
+                  );
                 },
                 child: Text("Press here"),
               ),
@@ -69,18 +97,14 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      bottomSheet: Container(
-        color: Colors.blue[200],
-        height: 50,
-        child: Center(child: Text("Bottom Sheet")),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
+          increment();
           ScaffoldMessenger.of(
             context,
-          ).showSnackBar(SnackBar(content: Text("Hello")));
+          ).showSnackBar(SnackBar(content: Text(count.toString())));
         },
-        child: Icon(Icons.message_outlined),
+        child: Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
     );
