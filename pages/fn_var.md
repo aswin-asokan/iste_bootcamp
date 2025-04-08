@@ -170,3 +170,8 @@ This saves the text input into the name variable. Then it rebuilds the screen to
 | Function      | A block of reusable logic   | increment(), greetUser()    |
 | Function Call | Using the function          | increment();                |
 | setState()    | Tells Flutter to rebuild UI | setState(() { name = ... }) |
+
+https://github.com/user-attachments/assets/bcead20e-2b78-4852-b98e-52a46eaae27e
+
+
+
