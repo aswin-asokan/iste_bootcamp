@@ -11,9 +11,9 @@
 
 > **Note**
 > If you are new to programming please go through the code and make sure to read the comments.
-> **Comments are non executable code blocks used for documentation**
-> Use // for single line comments
-> Use /_...._/ for multi line comments
+> **Comments are non executable code blocks used for documentation**   
+> Use // for single line comments   
+> Use /_...._/ for multi line comments   
 
 ### What are Variables?
 
@@ -171,6 +171,7 @@ This saves the text input into the name variable. Then it rebuilds the screen to
 | Function Call | Using the function          | increment();                |
 | setState()    | Tells Flutter to rebuild UI | setState(() { name = ... }) |
 
+   
 <video height=350 controls>
   <source src="https://aswin-asokan.github.io/iste_bootcamp/videos/fn_var.mp4" type="video/mp4">
   Your browser does not support the video tag.
