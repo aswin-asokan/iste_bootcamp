@@ -15,3 +15,7 @@ This repository contains the step by step guidance of flutter application develo
 2. [Basic Widgets](pages/basic_widgets.md)
 3. [Scaffold Class](pages/scaffold_class.md)
 4. [Functions and Variables](pages/fn_var.md)
+
+## Tasks
+
+1. [Task 1](pages/task_1.md)
