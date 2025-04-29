@@ -124,8 +124,8 @@ This creates a grid with 2 columns and 6 items.
 
 create two pages for home and settings ( You can create more pages if you want).
 
-| <img src="https://aswin-asokan.github.io/iste_bootcamp/images/home1.png" height=500/> | <img src="https://aswin-asokan.github.io/iste_bootcamp/images/settings.png" height=500/> |
-| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/home1.png" height=500/>
+<img src="https://aswin-asokan.github.io/iste_bootcamp/images/settings.png" height=500/>
 
 To create a tasks widget,
 

@@ -1,4 +1,4 @@
-# Task 1: Login Page
+# Task 2: Multi-Page App
 
 Design a **Multi-page** Flutter application with atleast the following requirements:
 
