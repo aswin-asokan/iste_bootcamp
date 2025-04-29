@@ -16,6 +16,7 @@ This repository contains the step by step guidance of flutter application develo
 3. [Scaffold Class](pages/scaffold_class.md)
 4. [Functions and Variables](pages/fn_var.md)
 5. [Navigation and Components](pages/multi_page.md)
+6. [Lists and Dynamic widgets](pages/dynamic_widget.md)
 
 ## Tasks
 
