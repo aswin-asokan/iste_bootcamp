@@ -306,6 +306,39 @@ tasks.add({
 });
 ```
 
+> **Note**
+> You can use the following code inside a onPressed action to delete something,
+
+```dart
+body: ListView.builder(
+    .
+    .
+    .
+    return Column(
+    .
+    .
+    .
+    child: Row(
+    .
+    .
+    .
+    // for removing from list
+    IconButton(
+        onPressed: () {
+        setState(() {
+            tasks.removeAt(index);
+        });
+        },
+        icon: Icon(Icons.delete_outline),
+    ),
+    .
+    .
+    .
+    )
+    )
+);
+```
+
 - Clears the input field
 
 ```dart
