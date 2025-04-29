@@ -145,9 +145,9 @@ CustomTextField(
 
 As you can see the number of lines reduced drastically.
 
-When it comes to the password field the state changes when we press the show password icon, so we should use the stateful widget to create custom widget.
-
 #### Stateful custom widgets
+
+When it comes to the password field the state changes when we press the show password icon, so we should use the stateful widget to create custom widget.
 
 ```dart
 import 'package:flutter/material.dart';
