@@ -304,3 +304,6 @@ lib
 |- main.dart
 |- register_page.dart
 ```
+
+> **Notes**
+> You can use this custom widgets anywhere, like replace the ones you have used inside login page.
