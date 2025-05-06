@@ -306,8 +306,18 @@ tasks.add({
 });
 ```
 
+- Clears the input field
+
+```dart
+taskController.clear();
+```
+
+- Closes the bottom sheet with Navigator.pop(context)
+
 > **Note**
-> You can use the following code inside a onPressed action to delete something,
+> You can use the following code inside a onPressed action to delete or edit something,
+
+**For deletion**
 
 ```dart
 body: ListView.builder(
@@ -339,10 +349,41 @@ body: ListView.builder(
 );
 ```
 
-- Clears the input field
+**For editing**
 
 ```dart
-taskController.clear();
+//for editing
+IconButton(
+  onPressed: () {
+    //read the current task name
+    setState(() {
+      taskController.text = tasks[index]['task'];
+    });
+    showModalBottomSheet(
+      .
+      .
+      .
+      CustomButton(
+        buttonLabel: "Save task",
+        action: () {
+          setState(() {
+            //remove the task from index
+            tasks.removeAt(index);
+            //update and insert the task
+            tasks.insert(index, {
+              'task': taskController.text,
+              'isChecked': false,
+            });
+            taskController.clear();
+          });
+          Navigator.pop(context);
+        },
+        color: Colors.black87,
+      ),
+      .
+      .
+      .
+    );
+  }
+)
 ```
-
-- Closes the bottom sheet with Navigator.pop(context)

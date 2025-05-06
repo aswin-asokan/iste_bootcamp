@@ -1,10 +1,13 @@
-# Task 2: Multi-Page App
+# Task 2: Multi-Page App with CRUD operations
 
 Design a **Multi-page** Flutter application with atleast the following requirements:
 
 1. Login page (same as Task 1)
 2. Registration page
 3. Home page
+
+> **Note**
+> **CRUD** stands for **Create, Read, Update, and Delete**, representing the four fundamental operations used to manage data in databases and applications. These operations allow users to interact with data by adding new information, viewing existing data, modifying records, and removing unwanted data.
 
 #### Registration page
 
@@ -27,6 +30,7 @@ The home page should have:
 - A button to add new tasks
 - Checkbox to mark completed tasks
 - An option to delete tasks
+- Option to edit tasks
 
 ### Sample output
 
