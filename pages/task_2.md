@@ -7,6 +7,7 @@ Design a **Multi-page** Flutter application with atleast the following requireme
 3. Home page
 
 > **Note**
+>
 > **CRUD** stands for **Create, Read, Update, and Delete**, representing the four fundamental operations used to manage data in databases and applications. These operations allow users to interact with data by adding new information, viewing existing data, modifying records, and removing unwanted data.
 
 #### Registration page
