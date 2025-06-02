@@ -21,6 +21,7 @@ This repository contains the step by step guidance of flutter application develo
 7. [Firebase Connection](pages/firebase_initialization.md)
 8. [Firebase Authentication](pages/firebase_authentication.md)
 9. [Firebase Database and CRUD Operations](pages/firebase_database.md)
+10. [Releasing App](pages/app_release.md)
 
 ## Tasks
 
