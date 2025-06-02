@@ -9,6 +9,7 @@ This repository contains the step by step guidance of flutter application develo
 > - <span style="color:red">Flutter is a frequently updating framework so the code base may change regularly. Relying too much on chat GPT or other AI tools can lead to errors</span>
 > - The code base created for this documentation can be found [here](https://github.com/aswin-asokan/iste_bootcamp/tree/main/todo_app). You can refer it to create your application
 > - Make sure to read the comments inside each code blocks as explanations are given inside the code itself
+> - This documentation is designed to be beginner-friendly and serves as an introduction to implementing basic widgets, authentication and CRUD operations using Firebase. For building more advanced applications, it is recommended to refer to the official Firebase documentation and consider integrating robust state management solutions such as BLoC or Provider.
 
 ## Documentations
 
