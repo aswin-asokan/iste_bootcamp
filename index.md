@@ -27,3 +27,4 @@ This repository contains the step by step guidance of flutter application develo
 
 1. [Task 1](pages/task_1.md)
 2. [Task 2](pages/task_2.md)
+3. [Task 3](pages/task_3.md)

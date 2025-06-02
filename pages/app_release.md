@@ -12,12 +12,12 @@
 2. [Changing App Icon (Done before building, if needed)](#how-to-change-app-icon-in-flutter-manual--package-methods)
    2.1. [Method 1: Package](#method-1-using-a-package-flutter_launcher_icons)
    2.2. [Method 2: Manually](#method-2-manual-icon-replacement-all-platforms)
-   2.2. [Android]()
-   2.2. [iOS](#-ios-build-release-app-macos-only)
-   2.3. [Web](#-web-build-release-web-app)
-   2.4. [Windows](#-windows-build-release-exe)
-   2.5. [macOS](#-macos-build-release-app-macos-only)
-   2.6. [Linux](#-linux-build-release-app)
+   - [Android](#-android)
+   - [iOS](#-ios)
+   - [Web](#-web)
+   - [Windows](#-windows)
+   - [macOS](#-macos)
+   - [Linux](#-linux)
 
 ## Flutter Release Build Guide
 
