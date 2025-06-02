@@ -17,6 +17,7 @@ This repository contains the step by step guidance of flutter application develo
 4. [Functions and Variables](pages/fn_var.md)
 5. [Navigation and Components](pages/multi_page.md)
 6. [Lists and Dynamic widgets](pages/dynamic_widget.md)
+7. [Firebase Connection](pages/firebase_initialization.md)
 
 ## Tasks
 
