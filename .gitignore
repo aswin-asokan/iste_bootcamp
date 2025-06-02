@@ -1,11 +1,56 @@
-code_base/.dart_tool
-code_base/.idea
-code_base/.vscode
-code_base/build
-code_base/android
-code_base/ios
-code_base/web
-code_base/linux
-code_base/macos
-code_base/windows
-code_base/test
+# Miscellaneous
+todo_app/*.class
+todo_app/*.log
+todo_app/*.pyc
+todo_app/*.swp
+todo_app/.DS_Store
+todo_app/.atom/
+todo_app/build/
+todo_app/buildlog/
+todo_app/history
+todo_app/svn/
+todo_app/swiftpm/
+todo_app/migrate_working_dir/
+
+# IntelliJ related
+todo_app/*.iml
+todo_app/*.ipr
+todo_app/*.iws
+todo_app/.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+todo_app/doc/api/
+todo_app/ios/Flutter/.last_build_id
+todo_app/.dart_tool/
+todo_app/.flutter-plugins
+todo_app/.flutter-plugins-dependencies
+todo_app/.pub-cache/
+todo_app/.pub/
+todo_app/build/
+
+# Symbolication related
+todo_app/app.*.symbols
+
+# Obfuscation related
+todo_app/app.*.map.json
+
+# Android Studio will place build artifacts here
+todo_app/android/app/debug
+todo_app/android/app/profile
+todo_app/android/app/release
+
+todo_app/android/
+todo_app/ios/
+todo_app/linux/
+todo_app/macos/
+todo_app/test/
+todo_app/web/
+todo_app/windows/
+todo_app/.metadata
+todo_app/firebase.json
+todo_app/lib/core/
