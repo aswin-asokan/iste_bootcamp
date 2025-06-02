@@ -149,6 +149,8 @@ Run the following command inside your Flutter project directory:
 flutterfire configure
 ```
 
+![configure](https://aswin-asokan.github.io/iste_bootcamp/images/configure.png)
+
 This will:
 
 - Let you choose your Firebase project from the list
@@ -180,7 +182,6 @@ You can add dependencies directly from the terminal using:
 
 ```bash
 flutter pub add <package_name>
-
 ```
 
 Example:
@@ -200,7 +201,7 @@ flutter pub add firebase_core
 dependencies:
   flutter:
     sdk: flutter
-  #dependency_name: ^version
+  #package_name: ^version
   firebase_core: ^3.13.1
   firebase_auth: ^5.5.4
   firebase_database: ^11.3.6
@@ -240,3 +241,7 @@ void main() async {//make main function as async
 > 🛠️ Don't forget to import firebase_core.dart and your generated firebase_options.dart file.
 
 This ensures Firebase is ready before your app UI starts rendering.
+
+Also in your project page you can see the apps connected:
+
+![apps_connected](https://aswin-asokan.github.io/iste_bootcamp/images/added_apps.png)
