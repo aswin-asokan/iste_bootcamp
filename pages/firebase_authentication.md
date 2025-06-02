@@ -1,4 +1,4 @@
-# Firebase Authentication 🔑
+# Firebase Authentication
 
 As mentioned earlier Firebase Authentication offers a complete identity solution, making it simple to manage users in your application. For implementing the online user authentication in your Flutter application follow the instructions.
 
