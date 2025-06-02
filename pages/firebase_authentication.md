@@ -14,14 +14,14 @@ As mentioned earlier Firebase Authentication offers a complete identity solution
 6. [Forgot Password Function](#forgot-password-function)
 7. [Fetching Username](#fetching-user-name)
 8. [Logout Function](#logout-function)
-9. [Confirm Password](#confirm-password)  
-10. [Update Mail ID](#update-mail-id)  
-11. [Update Password](#update-password)  
+9. [Confirm Password](#confirm-password)
+10. [Update Mail ID](#update-mail-id)
+11. [Update Password](#update-password)
 12. [Delete Account](#deleting-account)
 
 ### Setting up Authentication in Firebase Console
 
-- From the side menu of the Project console in Firebase, choose `Authentication`
+- From the side menu of the Project console in Firebase, choose `build -> Authentication`
 - Press on **Get Started**
 - Choose **Email/Password** `Sign-in Method`
 - Enable the **Email/Password** and `Save` the changes
@@ -540,7 +540,7 @@ Future<void> changeMail(BuildContext context, String mailID) async {
 **Usage:**
 
 ```dart
-onPress: () async {
+onPressed: () async {
     setState(() {
         password = passwordController.text;
         newEmail = newEmailController.text;
@@ -549,7 +549,7 @@ onPress: () async {
     confirmed = await confirmPassword(password);
     //if the password is correct allow user to change the mail id
     if (confirmed) changeMail(context, newEmail);
-},
+},// for button press
 ```
 
 Upon successful change of mail ID a verification mail will be sent to the new mail ID. After verification users can use the new mail ID for signing in. A notification will be sent to the old mail ID.
