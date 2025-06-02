@@ -7,7 +7,7 @@ This repository contains the step by step guidance of flutter application develo
 > - Go through the official [Flutter installation](https://docs.flutter.dev/get-started/install) document and install requirements mentioned as per the OS
 > - Use official [Flutter documents](https://docs.flutter.dev/) on widgets or refer stackoverflow for development
 > - <span style="color:red">Flutter is a frequently updating framework so the code base may change regularly. Relying too much on chat GPT or other AI tools can lead to errors</span>
-> - The code base used for this can be found [here](https://github.com/aswin-asokan/iste_bootcamp/tree/main/todo_app). You can refer it to create your application
+> - The code base created for this documentation can be found [here](https://github.com/aswin-asokan/iste_bootcamp/tree/main/todo_app). You can refer it to create your application
 > - Make sure to read the comments inside each code blocks as explanations are given inside the code itself
 
 ## Documentations
@@ -28,3 +28,4 @@ This repository contains the step by step guidance of flutter application develo
 1. [Task 1](pages/task_1.md)
 2. [Task 2](pages/task_2.md)
 3. [Task 3](pages/task_3.md)
+4. [Task 4](pages/task_4.md)
