@@ -15,9 +15,9 @@ As mentioned earlier Firebase Authentication offers a complete identity solution
 7. [Fetching Username](#fetching-user-name)
 8. [Logout Function](#logout-function)
 9. [Confirm Password](#confirm-password)  
-   10.[Update Mail ID](#update-mail-id)  
-   11.[Update Password](#update-password)  
-   12.[Delete Account](#deleting-account)
+10. [Update Mail ID](#update-mail-id)  
+11. [Update Password](#update-password)  
+12. [Delete Account](#deleting-account)
 
 ### Setting up Authentication in Firebase Console
 
